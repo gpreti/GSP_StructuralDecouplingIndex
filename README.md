@@ -9,18 +9,18 @@ The code includes two parts: the first part runs in Matlab (folder Matlab), whil
 
 The following softwares need to be installed:
 
-- For the first part of the code: MATLAB (originally created on version R2016B). All needed additional toolboxes are included in the code folder.
+- For the first part of the code: MATLAB (originally created on version R2016B), spm12 (please download spm12 from here: https://www.fil.ion.ucl.ac.uk/spm/software/download/spmreg.php and set it under the known Matlab paths with Matlab --> Set path --> Add folder with subfolders).
 
-- For the second part of the code: PYTHON (originally created on version 2.7.15), Jupyter Notebook App.
+- For the second part of the code: PYTHON version 2.7.15, Anaconda distribution (including Jupyter Notebook App), Neurosynth (you can follow instructions reported here to easily install Neurosynth: https://github.com/neurosynth/neurosynth).
 
 Code tested on macOS High Sierra 10.13.6.
 
 
 *******INSTALLATION GUIDE:
 
-It will be enough to download the folder and set the Matlab path to the folder (Matlab --> Set path --> Add folder with subfolders). To avoid conflicts with existing toolboxes / functions, it is suggested to include just this folder in the Matlab path, before running the code (by setting the path to 'default' before adding the folder).
+- It will be enough to download the code folder and set the Matlab path to the folder (Matlab --> Set path --> Add folder with subfolders). To avoid conflicts with existing toolboxes / functions, it is suggested to include ONLY the paths of this folder and of the spm folder in the Matlab paths list, before running the code (by setting the path to 'default' before adding the new paths).
 
-In the folder Python/database_feb_2015, please unzip Archive.zip so that the database files are available for the meta-analysis.
+- In the folder Python/database_feb_2015, please unzip the two files databasetxt and features.txt. so that they are available for the meta-analysis.
 
 Typical install time: within minutes.
 
@@ -38,7 +38,7 @@ Expected run time for demo on a "normal" desktop computer: around 10 minutes in 
 
 ///PART 2 (Python):
 
-Instructions: open and run the script 05_metaanalysis_neurosynth_myanalysis.ipynb (included in he folder Python) in the Jupyter Notebook. 
+Instructions: open and run the script 05_metaanalysis_neurosynth_myanalysis.ipynb (included in the folder Python) in the Jupyter Notebook. 
 
 Expected output: The script runs the Neurosynth meta-analysis by taking as inputs the maps in Python/my_masks and produces the plot of figure 3 (left). 
 
