@@ -38,9 +38,9 @@ Expected run time for demo on a "normal" desktop computer: 10 minutes in total.
 
 ///PART 2 (Python):
 
-Instructions:open and run the script 05_metaanalysis_neurosynth_myanalysis.ipynb (included in he folder Python) in the Jupyter Notebook. 
+Instructions: open and run the script 05_metaanalysis_neurosynth_myanalysis.ipynb (included in he folder Python) in the Jupyter Notebook. 
 
-Expected output: The script runs the Neurosynth meta-analysis and produces the plot of figure 3 (left).
+Expected output: The script runs the Neurosynth meta-analysis by taking as inputs the maps in Python/my_masks and produces the plot of figure 3 (left). 
 
 Expected run time for demo on a "normal" desktop computer: 4 minutes.
 
