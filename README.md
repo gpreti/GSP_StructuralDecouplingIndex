@@ -1,5 +1,5 @@
 # GSP_StructuralDecouplingIndex
-Code to compute and test structural decoupling index (Preti &amp; Van De Ville 2019)
+Code to compute and test structural decoupling index (Preti and Van De Ville 2019)
 
 
 The code includes two parts: the first part runs in Matlab (folder Matlab), while the second part (Neurosynth analysis) is implemented in Python (folder Python, code adapted from Margulies PNAS 2016).
@@ -9,7 +9,7 @@ The code includes two parts: the first part runs in Matlab (folder Matlab), whil
 
 The following softwares need to be installed:
 
-- For the first part of the code: MATLAB (originally created on version R2016B). All needed toolboxes are included in the code folder.
+- For the first part of the code: MATLAB (originally created on version R2016B). All needed additional toolboxes are included in the code folder.
 
 - For the second part of the code: PYTHON (originally created on version 2.7.15), Jupyter Notebook App.
 
@@ -22,7 +22,7 @@ It will be enough to download the folder and set the Matlab path to the folder (
 
 In the folder Python/database_feb_2015, please unzip Archive.zip so that the database files are available for the meta-analysis.
 
-Typical install time: within one minute.
+Typical install time: within minutes.
 
 
 *******DEMO:
@@ -31,9 +31,9 @@ Typical install time: within one minute.
 
 Instructions: After having set the Matlab path (see Installation), run the main script by typing GSP_FullPipeline in the Matlab command window.
 
-Expected output: all computations described in the paper are performed and all figures (except for Figure 3, produced in part 2) are reproduced. The structural decoupling index percentile masks (which will serve as input for the following Python meta-analysis) are created and saved in the folder results/my_masks.
+Expected output: all computations described in the paper are performed and all paper figures (except for Figure 3, produced in part 2) are created for the demo dataset (10 subjects). The structural decoupling index percentile masks (which will serve as input for the following Python meta-analysis) are created and saved in the folder results/my_masks. 
 
-Expected run time for demo on a "normal" desktop computer: 10 minutes in total.
+Expected run time for demo on a "normal" desktop computer: around 10 minutes in total.
 
 
 ///PART 2 (Python):
@@ -42,16 +42,17 @@ Instructions: open and run the script 05_metaanalysis_neurosynth_myanalysis.ipyn
 
 Expected output: The script runs the Neurosynth meta-analysis by taking as inputs the maps in Python/my_masks and produces the plot of figure 3 (left). 
 
-Expected run time for demo on a "normal" desktop computer: 4 minutes.
+Expected run time for demo on a "normal" desktop computer: around 4 minutes.
 
 
-*******INSTRUCTIONS FOR USE:
+*******INSTRUCTIONS FOR USE: How to run the software on your data
 
 ///PART 1 (Matlab):
 
-How to run the software on your data: just replace the 2 input mat files inside the folder Matlab/data, and their names in the code (script GSP_Laplacian). 
+replace the 2 input mat files inside the folder Matlab/data, and their names in the code (script GSP_Laplacian). 
 
 ///PART 2 (Python):
-How to run the software on your data: just replace the Neurosynth input masks inside the folder Python/my_masks
+
+replace the Neurosynth input masks inside the folder Python/my_masks and their names in the code (script 05_metaanalysis_neurosynth_myanalysis.ipynb).
 
 Reproduction instructions: all computations described in the paper are performed in the code.
